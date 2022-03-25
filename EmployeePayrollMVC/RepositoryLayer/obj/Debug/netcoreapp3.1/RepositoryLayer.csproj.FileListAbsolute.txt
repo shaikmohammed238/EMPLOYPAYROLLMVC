@@ -1,0 +1,13 @@
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.deps.json
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\bin\Debug\netcoreapp3.1\RepositoryLayer.pdb
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.dll
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\bin\Debug\netcoreapp3.1\CommonLayer.pdb
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.AssemblyReference.cache
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfoInputs.cache
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.AssemblyInfo.cs
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CoreCompileInputs.cache
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.csproj.CopyComplete
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.dll
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\RepositoryLayer\obj\Debug\netcoreapp3.1\RepositoryLayer.pdb
