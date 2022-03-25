@@ -30,6 +30,10 @@ namespace BussinessLayer.Services
                 throw;
             }
         }
+        /// <summary>
+        /// Updates the employee.
+        /// </summary>
+        /// <param name="employee">The employee.</param>
         public void UpdateEmployee(Employee employee)
         {
             try
