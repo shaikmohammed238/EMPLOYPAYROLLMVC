@@ -20,6 +20,10 @@ namespace EmployeePayrollMVC.Controllers
         {
             return View();
         }
+        /// <summary>
+        /// API FOR INSERT
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         public IActionResult Create()
         {
