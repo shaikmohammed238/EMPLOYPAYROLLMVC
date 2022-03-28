@@ -125,3 +125,7 @@ D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\bin\Debug\net
 D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Create.cshtml.g.cs
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Index.cshtml.g.cs
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Delete.cshtml.g.cs
+D:\cfp all\CFP(projects)\mvc\EmployeePayrollMVC\EmployeePayrollMVC\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Details.cshtml.g.cs

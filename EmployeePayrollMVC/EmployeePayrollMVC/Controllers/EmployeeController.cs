@@ -10,15 +10,22 @@ namespace EmployeePayrollMVC.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly IemployeeBL  iemployeeBL;
+        private readonly IemployeeBL iemployeeBL;
 
         public EmployeeController(IemployeeBL iemployeeBL)
         {
             this.iemployeeBL = iemployeeBL;
         }
+        //public IActionResult Index()
+        //{
+        //    return View();
+        //}
         public IActionResult Index()
         {
-            return View();
+            List<Employee> lstEmployee = new List<Employee>();
+            lstEmployee = iemployeeBL.GetAllEmployee().ToList();
+
+            return View(lstEmployee);
         }
         /// <summary>
         /// API FOR INSERT
@@ -41,5 +48,78 @@ namespace EmployeePayrollMVC.Controllers
             }
             return View(employee);
         }
+        //EDIT
+        [HttpGet]
+        public IActionResult Edit(int? EmpId)
+        {
+            if (EmpId == null)
+            {
+                return NotFound();
+            }
+            Employee employee = iemployeeBL.GetEmployeeData(EmpId);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int EmpId, [Bind] Employee employee)
+        {
+            if (EmpId != employee.EmpId)
+            {
+                return NotFound();
+            }
+            if (ModelState.IsValid)
+            {
+                iemployeeBL.UpdateEmployee(employee);
+                return RedirectToAction("Index");
+            }
+            return View(employee);
+        }
+        //deelte
+        [HttpGet]
+        public IActionResult Delete(int? EmpId)
+        {
+            if (EmpId == null)
+            {
+                return NotFound();
+            }
+            Employee employee = iemployeeBL.GetEmployeeData(EmpId);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public IActionResult DeleteConfirmed(int? EmpId)
+        {
+            iemployeeBL.DeleteEmployee(EmpId);
+            return RedirectToAction("Index");
+        }
+        //DETAILS
+        [HttpGet]
+        public IActionResult Details(int? EmpId)
+        {
+            if (EmpId == null)
+            {
+                return NotFound();
+            }
+            Employee employee = iemployeeBL.GetEmployeeData(EmpId);
+
+            if (employee == null)
+            {
+                return NotFound();
+            }
+            return View(employee);
+        }
+
     }
 }
