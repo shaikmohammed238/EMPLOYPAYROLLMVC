@@ -66,6 +66,7 @@ namespace RepositoryLayer.Services
                 SqlCommand updateemp = new SqlCommand("sp_EmpPayUPDATE", connection);
                 updateemp.CommandType = CommandType.StoredProcedure;
 
+                updateemp.Parameters.AddWithValue("@EmpId", employee.EmpId);
                 updateemp.Parameters.AddWithValue("@Name", employee.Name);
                 updateemp.Parameters.AddWithValue("@Profile", employee.ProfileImage);
                 updateemp.Parameters.AddWithValue("@Gender", employee.Gender);
