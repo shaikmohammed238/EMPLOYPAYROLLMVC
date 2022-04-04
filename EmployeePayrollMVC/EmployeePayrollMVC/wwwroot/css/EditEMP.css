@@ -1,0 +1,20 @@
+﻿.edit {
+    text-align: center
+}
+
+.row {
+    justify-content: center;
+}
+
+.header {
+    font: normal normal bold 22px/25px Montserrat;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.back {
+    padding-right: 205px
+}

@@ -3,11 +3,16 @@
 @{
     ViewData["Title"] = "Index";
 }
-
-<h1>Index</h1>
+<div class="header">
+    <img src="~/assets/images/logo.png" style="width:50px;height:47px" />
+    <div><span style="color: #82A70C"> EMPLOYEE </span><br /><span style="color: #42515F"> PAYROLL</span></div>
+</div>
+<h1 style="color:blue" class="Employee" >Employee Index</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <input type="button"onclick="location.href='@Url.Action("Create", "Employee")'" value="Create Employee" class="btn btn-primary" />
+    @*<a asp-action="Create"class="Create">Create New</a>*@
+    @*onclick="location.href='@Url.Action("Create", "Employee")'">*@
 </p>
 <table class="table">
     <thead>
@@ -67,9 +72,9 @@
                 @Html.DisplayFor(modelItem => item.Notes)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new {  id=item.EmpId }) |
-                @Html.ActionLink("Details", "Details", new { id=item.EmpId }) |
-                @Html.ActionLink("Delete", "Delete", new {  id=item.EmpId })
+                @Html.ActionLink("Edit", "Edit", new { EmpId = item.EmpId }) |
+                @Html.ActionLink("Details", "Details", new { EmpId = item.EmpId }) |
+                @Html.ActionLink("Delete", "Delete", new { EmpId = item.EmpId })
             </td>
         </tr>
     }

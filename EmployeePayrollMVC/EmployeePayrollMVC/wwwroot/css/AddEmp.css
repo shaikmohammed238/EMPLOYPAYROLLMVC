@@ -1,18 +1,39 @@
-﻿﻿.create {
-    text-align: center
-}
-
-.header {
-    font: normal normal bold 22px/25px Montserrat;
-    letter-spacing: 0px;
-    text-transform: capitalize;
-    opacity: 1;
+﻿.header {
     display: flex;
-    flex-direction: row;
+    justify-content: start;
+}
+﻿
+.Create {
+    align-content: center;
 }
 
 .row {
+    background-color: #ddb8b8;
     justify-content: center
+}
+
+.icon {
+    height: 45px;
+    width: 45px;
+    padding-top: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    align-items:center;
+    border:0px solid green;
+}
+.form-control{
+    width:100%;
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:4px;
+    resize:vertical;
+}
+.buttons{
+    text-align:center;
 }
 
 .back {

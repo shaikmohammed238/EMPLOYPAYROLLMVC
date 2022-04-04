@@ -24,8 +24,8 @@ END;
 ---execute procedure 
 EXEC EmpPayINSERT(@Name,@Profile,@Gender,@Department,@Salary,@Startdate,@Notes)
 ----for update store procedure
-CREATE  PROC EmpPayUPDATE( 
-	       
+alter  PROC sp_EmpPayUPDATE( 
+	 @EmpId int,      
     @Name VARCHAR(100),         
     @Profile VARCHAR(100),
 	@Gender VARCHAR(100) ,       
@@ -37,13 +37,14 @@ CREATE  PROC EmpPayUPDATE(
 AS
 BEGIN
 UPDATE EmployeePayrollForm SET 
+							
 							[Name]=@Name,
 							ProfileImage=@Profile,
 							Gender=@Gender,
                             Department=@Department,
 							Salary=@Salary,
                            Startdate=@Startdate,
-							Notes=@Notes
+							Notes=@Notes where EmpId=@EmpId
 END;
 -----------GET ALL PROC
 CREATE PROC EmpPayGETALL
@@ -53,17 +54,18 @@ SELECT * FROM EmployeePayrollForm
 ORDER BY EmpId
 END
 -------DELETE PROC 
-CREATE PROC EmpPayDEL(@Id Int)
+Alter PROC sp_EmpPayDEL(@EmpId Int)
 AS
 begin
-DELETE FROM EmployeePayrollForm WHERE EmpId=@Id
+DELETE FROM EmployeePayrollForm WHERE EmpId=@EmpId
 END
 ---------GETBYID PROC
-CREATE PROC EmpPayGETBYID(@Id Int)
+Alter PROC sp_EmpPayGETBYID(@EmpId Int)
 AS
 begin
-SELECT * FROM EmployeePayrollForm WHERE EmpId=@Id
+SELECT * FROM EmployeePayrollForm WHERE EmpId=@EmpId
 END
 ------
 alter table EmployeePayrollForm
 alter column ProfileImage varchar(100);
+ exec sp_EmpPayDEL @EmpId=1;
