@@ -22,7 +22,7 @@ INSERT INTO EmployeePayrollForm([Name],ProfileImage,Gender,Department,Salary,Sta
 VALUES (@Name,@Profile,@Gender,@Department,@Salary,@Startdate,@Notes)
 END;
 ---execute procedure 
-EXEC EmpPayINSERT(@Name,@Profile,@Gender,@Department,@Salary,@Startdate,@Notes)
+EXEC EmpPayINSERT(@Name,@Profile,@Gender,@Department,@Salary,@Startdate,@Notes)-----------string give name------
 ----for update store procedure
 alter  PROC sp_EmpPayUPDATE( 
 	 @EmpId int,      
